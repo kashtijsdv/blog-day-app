@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reset Password — BLOGDAY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-auth">
+<div class="page-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="brand">BLOG<span>DAY</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li id="nav-auth-1"><a href="login.html" class="nav-outline">Sign In</a></li>
+    <li id="nav-auth-2"><a href="register.html" class="nav-cta">Join Free</a></li>
+  </ul>
+  <button class="hamburger" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="login.html">Sign In</a>
+  <a href="register.html">Join Free</a>
+</div>
+
+<!-- FORM -->
+<main class="form-page" role="main" aria-label="Reset Password Form">
+  <div class="form-card">
+    <div class="form-card-accent"></div>
+    <div class="form-card-body">
+      <p class="form-eyebrow">Account Recovery</p>
+      <h1 class="form-title">Reset <em>Password</em></h1>
+
+      <div class="field">
+        <label for="forgotUser">Username</label>
+        <input type="text" id="forgotUser" name="username" placeholder="your_username" autocomplete="username" maxlength="40">
+        <div class="invalid-feedback" id="forgotUserErr"></div>
+      </div>
+
+      <div class="field">
+        <label for="forgotPass">New Password</label>
+        <div class="input-eye-wrap">
+          <input type="password" id="forgotPass" name="password" placeholder="••••••••" autocomplete="new-password" maxlength="64">
+          <button type="button" class="eye-toggle" id="toggleForgotPass" aria-label="Show password">👁</button>
+        </div>
+        <p class="hint">Min 6 chars · 1 uppercase letter · 1 number</p>
+        <div class="invalid-feedback" id="forgotPassErr"></div>
+      </div>
+
+      <div class="alert-error" id="forgotGenErr"></div>
+      <div class="alert-success" id="forgotSuccess"></div>
+
+      <button class="btn btn-outline-gold btn-full mt-2" id="forgotBtn">
+        Reset Password →
+      </button>
+
+      <div class="form-divider">or</div>
+
+      <div class="form-footer">
+        Remembered it? <a href="login.html">Back to Sign In</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© <span class="year"></span> <strong>BLOGDAY</strong></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

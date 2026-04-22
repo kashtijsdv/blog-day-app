@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — BLOGDAY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-auth">
+<div class="page-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="brand">BLOG<span>DAY</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="read.html">Read</a></li>
+    <li id="nav-auth-2"><a href="register.html" class="nav-cta">Join Free</a></li>
+  </ul>
+  <button class="hamburger" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="read.html">Read Blogs</a>
+  <a href="register.html">Join Free</a>
+</div>
+
+<!-- FORM -->
+<main class="form-page" role="main" aria-label="Sign In Form">
+  <div class="form-card">
+    <div class="form-card-accent"></div>
+    <div class="form-card-body">
+      <p class="form-eyebrow">Welcome Back</p>
+      <h1 class="form-title">Sign <em>In</em></h1>
+
+      <div class="field">
+        <label for="loginUser">Username</label>
+        <input type="text" id="loginUser" name="username" placeholder="your_username" autocomplete="username" maxlength="40">
+        <div class="invalid-feedback" id="loginUserErr"></div>
+      </div>
+
+      <div class="field">
+        <label for="loginPass">Password</label>
+        <div class="input-eye-wrap">
+          <input type="password" id="loginPass" name="password" placeholder="••••••••" autocomplete="current-password" maxlength="64">
+          <button type="button" class="eye-toggle" id="toggleLoginPass" aria-label="Show password">👁</button>
+        </div>
+        <div class="invalid-feedback" id="loginPassErr"></div>
+      </div>
+
+      <div class="alert-error" id="loginGenErr"></div>
+      <div class="alert-success" id="loginSuccess"></div>
+
+      <button class="btn btn-gold btn-full mt-2" id="loginBtn">
+        Sign In →
+      </button>
+
+      <div class="form-divider">or</div>
+
+      <!-- Password links shown directly on login page -->
+      <div class="form-footer">
+        <a href="forgot.html">🔑 Forgot your password?</a>
+      </div>
+      <div class="form-footer mt-1">
+        <a href="change-password.html">🛡️ Change your password</a>
+      </div>
+      <div class="form-footer mt-1">
+        Don't have an account? <a href="register.html">Create one</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© <span class="year"></span> <strong>BLOGDAY</strong></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOGDAY — Where Stories Live</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-home">
+<div class="page-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="brand">BLOG<span>DAY</span></a>
+  <ul class="nav-links" id="desktopNav">
+    <li><a href="read.html">Read Blogs</a></li>
+    <li><a href="write.html">Write</a></li>
+    <li id="nav-auth-1"><a href="login.html" class="nav-outline">Sign In</a></li>
+    <li id="nav-auth-2"><a href="register.html" class="nav-cta">Join Free</a></li>
+  </ul>
+  <button class="hamburger" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="read.html">Read Blogs</a>
+  <a href="write.html">Write a Blog</a>
+  <a href="login.html" id="mob-signin">Sign In</a>
+  <a href="register.html" id="mob-join">Create Account</a>
+</div>
+
+<!-- HERO -->
+<div class="home-wrap">
+  <section class="hero">
+    <p class="hero-label">Est. 2026 · Your Creative Space</p>
+    <h1 class="hero-title">Where <em>Ideas</em><br>Find Their Voice</h1>
+    <p class="hero-sub">A curated platform for thoughtful writing. Share your stories, discover new perspectives, and join a community of curious minds.</p>
+    <div class="hero-buttons">
+      <a href="register.html" class="btn btn-gold">✦ Start Writing</a>
+      <a href="read.html" class="btn btn-ghost">Explore Stories →</a>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS — only 4, no password cards -->
+  <section class="features">
+    <p class="features-label">Everything You Need</p>
+    <h2 class="features-title">One Platform,<br><em>Endless Stories</em></h2>
+    <div class="cards-grid">
+      <a href="login.html" class="feat-card">
+        <span class="feat-icon">🔐</span>
+        <h3 class="feat-title">Sign In</h3>
+        <p class="feat-desc">Welcome back. Access your account, manage your posts, and continue your creative journey.</p>
+        <span class="feat-arrow">Sign In →</span>
+      </a>
+      <a href="register.html" class="feat-card">
+        <span class="feat-icon">✨</span>
+        <h3 class="feat-title">Create Account</h3>
+        <p class="feat-desc">Join thousands of writers. Create your free account and start sharing your stories today.</p>
+        <span class="feat-arrow">Join Free →</span>
+      </a>
+      <a href="write.html" class="feat-card">
+        <span class="feat-icon">✍️</span>
+        <h3 class="feat-title">Write Blog</h3>
+        <p class="feat-desc">Put your thoughts into words. Craft compelling stories and share them with the world.</p>
+        <span class="feat-arrow">Write Now →</span>
+      </a>
+      <a href="read.html" class="feat-card">
+        <span class="feat-icon">📖</span>
+        <h3 class="feat-title">Read Blogs</h3>
+        <p class="feat-desc">Discover stories from writers around the world. Find your next great read today.</p>
+        <span class="feat-arrow">Explore →</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> <strong>BLOGDAY</strong> · Crafted with intention · All rights reserved</p>
+  </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

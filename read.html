@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Blogs — BLOGDAY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-read">
+<div class="page-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="brand">BLOG<span>DAY</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="write.html">Write</a></li>
+    <li id="nav-auth-1"><a href="login.html" class="nav-outline">Sign In</a></li>
+    <li id="nav-auth-2"><a href="register.html" class="nav-cta">Join Free</a></li>
+  </ul>
+  <button class="hamburger" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="write.html">Write a Blog</a>
+  <a href="login.html" id="mob-signin">Sign In</a>
+  <a href="register.html" id="mob-join">Join Free</a>
+</div>
+
+<!-- BLOG LIST -->
+<main class="read-page">
+  <div class="read-header">
+    <div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Latest Posts</p>
+      <h1 class="read-title">All <em>Stories</em></h1>
+    </div>
+    <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
+      <div class="search-wrap">
+        <input type="text" id="blogSearch" placeholder="Search stories…" aria-label="Search blog posts">
+        <span class="search-icon">⌕</span>
+      </div>
+      <a href="write.html" class="btn btn-gold">+ Write Post</a>
+    </div>
+  </div>
+
+  <div class="blog-grid" id="blogGrid">
+    <!-- Rendered by JS -->
+  </div>
+</main>
+
+<!-- DETAIL PANEL -->
+<div class="detail-overlay" id="detailOverlay">
+  <div class="detail-panel" id="detailPanel">
+    <div class="detail-panel-header">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);">Story</span>
+      <button class="close-panel" id="closeDetail" aria-label="Close">✕</button>
+    </div>
+    <div class="detail-body">
+      <h2 class="detail-title" id="detailTitle"></h2>
+      <div class="detail-meta">
+        <div class="author-chip">
+          <div class="author-av" id="detailAvatar"></div>
+          <span class="author-name" id="detailAuthor"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.2rem;">
+          <span class="blog-date" id="detailDate"></span>
+          <span class="blog-date" id="detailReadTime" style="color:var(--gold);"></span>
+        </div>
+      </div>
+      <div class="detail-content" id="detailContent"></div>
+      <div style="margin-top:2rem;" id="detailActions"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>© <span class="year"></span> <strong>BLOGDAY</strong> · Crafted with intention</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
